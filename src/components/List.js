@@ -10,7 +10,6 @@ function List() {
     <tr key={char.id}>
       <td>{char.real_name ? char.real_name : 'Unknow'}</td>
       <td>{char.name ? char.name : 'Unknow'}</td>
-      <td>{char.publisher.name}</td>
       <td><Link to={`/${char.id}`}>Details</Link></td>
     </tr>
   )
@@ -33,7 +32,6 @@ function List() {
         <tr>
           <th scope="col">Real name</th>
           <th scope="col">Hero name</th>
-          <th scope="col">Publisher</th>
           <th scope="col">See more</th>
         </tr>
       </thead>
